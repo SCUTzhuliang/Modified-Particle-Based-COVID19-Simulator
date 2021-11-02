@@ -1,0 +1,26 @@
+function [Ai, Bi, Ci, Di, Ei, Fi, Gi, Hi, At, Bt, Ct, Dt, Et, Ft, Gt, Ht] = myiter2(i,A,B,C,D,E,F,G,H, Ai, Bi, Ci, Di, Ei, Fi, Gi, Hi, At, Bt, Ct, Dt, Et, Ft, Gt, Ht)
+% A = randn(1000,1000);
+% B = randn(1000,1000);
+% C = randn(1000,1000);
+% D = randn(1000,1000);
+% E = randn(1000,1000);
+% F = randn(1000,1000);
+% G = randn(1000,1000);
+% H = randn(1000,1000);
+Ai(:,:,i) = inv(A);
+Bi(:,:,i) = inv(B);
+Ci(:,:,i) = inv(C);
+Di(:,:,i) = inv(D);
+Ei(:,:,i) = inv(E);
+Fi(:,:,i) = inv(F);
+Gi(:,:,i) = inv(G);
+Hi(:,:,i) = inv(H);
+At(:,:,i) = transpose(A);
+Bt(:,:,i) = transpose(B);
+Ct(:,:,i) = transpose(C);
+Dt(:,:,i) = transpose(D);
+Et(:,:,i) = transpose(E);
+Ft(:,:,i) = transpose(F);
+Gt(:,:,i) = transpose(G);
+Ht(:,:,i) = transpose(H);
+end

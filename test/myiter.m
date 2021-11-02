@@ -1,0 +1,44 @@
+function myiter()
+Ai = zeros(1000,1000,10);
+Bi = zeros(1000,1000,10);
+Ci = zeros(1000,1000,10);
+Di = zeros(1000,1000,10);
+Ei = zeros(1000,1000,10);
+Fi = zeros(1000,1000,10);
+Gi = zeros(1000,1000,10);
+Hi = zeros(1000,1000,10);
+At = zeros(1000,1000,10);
+Bt = zeros(1000,1000,10);
+Ct = zeros(1000,1000,10);
+Dt = zeros(1000,1000,10);
+Et = zeros(1000,1000,10);
+Ft = zeros(1000,1000,10);
+Gt = zeros(1000,1000,10);
+Ht = zeros(1000,1000,10);
+for i = 1:10
+A = randn(1000,1000);
+B = randn(1000,1000);
+C = randn(1000,1000);
+D = randn(1000,1000);
+E = randn(1000,1000);
+F = randn(1000,1000);
+G = randn(1000,1000);
+H = randn(1000,1000);
+Ai(:,:,i) = inv(A);
+Bi(:,:,i) = inv(B);
+Ci(:,:,i) = inv(C);
+Di(:,:,i) = inv(D);
+Ei(:,:,i) = inv(E);
+Fi(:,:,i) = inv(F);
+Gi(:,:,i) = inv(G);
+Hi(:,:,i) = inv(H);
+At(:,:,i) = transpose(A);
+Bt(:,:,i) = transpose(B);
+Ct(:,:,i) = transpose(C);
+Dt(:,:,i) = transpose(D);
+Et(:,:,i) = transpose(E);
+Ft(:,:,i) = transpose(F);
+Gt(:,:,i) = transpose(G);
+Ht(:,:,i) = transpose(H);
+end
+end
